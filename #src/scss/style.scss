@@ -1,0 +1,116 @@
+@import 'fonts';
+
+
+//<Подключаем шрифты>=============================================================================================================================================
+//&subset=cyrillic-ext
+//&display=swap
+@import url("https://fonts.googleapis.com/css?family=Heebo:regular,500,700,900&display=swap");
+//</Подключаем шрифты>=============================================================================================================================================
+
+
+//<Шрифт по умолчанию>=============================================================================================================================================
+$fontFamily: "Heebo";
+//</Шрифт по умолчанию>=============================================================================================================================================
+
+//<ПЕРЕМЕННЫЕ>=============================================================================================================================================
+$minWidth: 320px;
+$maxWidth: 1152;
+$maxWidthContainer: 856;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//<ПЕРЕМЕННЫЕ>=============================================================================================================================================
+
+//<ОБНУЛЕНИЕ>
+body {
+   color: #21243D;
+   font-family: $fontFamily;
+   font-size: 14px;
+   &._lock {
+      overflow: hidden;
+   }
+}
+* {padding: 0; margin: 0; border: 0;}
+*,*:before,*:after{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+:focus,:active{outline: none}
+a:focus,a:active{outline: none}
+nav,footer,header,aside{display: block;}
+html,body{ height: 100%; width: 100%; font-size: 100%; line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+//</ОБНУЛЕНИЕ>
+
+//<ОБОЛОЧКА>=============================================================================================================================================
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   &._loaded {
+
+   }
+}
+//</ОБОЛОЧКА>=============================================================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>=============================================================================================================================================
+._container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   @media (max-width: $md1+px) {
+      max-width: 750px;
+   }
+   @media (max-width: $md3+px) {
+      max-width: none;
+      padding: 0 10px;
+   }
+}
+
+
+
+
+//</ОСНОВНАЯ СЕТКА>=============================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>=============================================================================================================================================
+
+
+.page {
+   padding: 90px 0 0 0;
+   flex: 1 1 auto;
+   @media screen and (max-width: $md3 + px) {
+      padding: 30px 0 0 0;
+   }
+}
+
+.social {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   &__item {
+      margin: 0 17px;
+      @media screen and (max-width: $md3 + px) {
+         margin: 0 13px;
+      }
+      img {
+         width: 30px;   
+         height: 30px;
+      }
+   }
+}
+//</ОСНОВНОЙ БЛОК>=============================================================================================================================================
+@import 'header';
+@import 'home';
+@import 'ui';
+@import 'forms';
+@import 'works';
+@import 'footer';
+@import 'blog';
+@import 'article';

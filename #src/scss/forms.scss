@@ -1,0 +1,23 @@
+.btn {
+   background: #FF6464;
+   border-radius: 2px;
+   height: 47px;
+   color: white;
+   line-height: calc(29 / 20) * 100%;
+   font-weight: 500;
+   font-size: 20px;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 0 20px;
+   transition: all 0.3s ease 0s;
+   @media (min-width: 992px) {
+      &:hover {
+         background-color: #dd3333;
+      }
+      &._fw {
+         width: 100%;
+      }
+   }
+}

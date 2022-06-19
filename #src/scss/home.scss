@@ -1,0 +1,215 @@
+.hello {
+   padding: 38px 0 71px 0;
+
+   @media screen and (max-width: $md1 + px) {
+      padding: 0 0 71px 0;
+   }
+
+   @media screen and (max-width: $md3 + px) {
+      padding: 0 0 60px 0;
+   }
+   // .hello_avatar
+
+   // .hello__container
+   &__container {
+      align-items: flex-start;
+      display: flex;
+      @media screen and (max-width: $md3 + px) {
+         text-align: center;
+         flex-direction: column-reverse;
+         
+      }
+   }
+
+   // .hello__content
+   &__content {
+      flex: 1 1 auto;
+      padding: 18px 110px 0 0;
+      *:last-child {
+         margin-bottom: 0px;
+      }
+      @media screen and (max-width: $md1 + px) {
+         padding: 18px 50px 0 0;
+      }
+      @media screen and (max-width: $md3 + px) {
+         padding: 40px 0 0 0;
+      }
+   }
+
+   &__avatar {
+      background: #000;
+      flex: 0 0 243px;
+      height: 243px;
+      width: 243px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: -5px 13px 0 0 #EDF7FA;
+      img {
+         max-width: 100%;
+         min-height: 100%;
+      }
+      @media screen and (max-width: $md3 + px) {
+         margin: 0 auto;
+         width: 170px;
+         height: 170px;
+         flex: 0 0 170px;
+      }
+      
+   }
+   // .hello__title
+   &__title {
+      margin: 0 0 25px 0;
+      @media screen and (max-width: $md1 + px) {
+         margin: 0 0 20px 0;
+      }
+   }
+   
+   // .hello__text
+   &__text {
+      margin: 0 0 35px 0;
+      @media screen and (max-width: $md3 + px) {
+         margin: 0 0 25px 0;
+         padding: 0 15px;
+      }
+   }
+   // .hello__btn
+   &__btn {
+      margin: 0 0 25px 0;
+      @media screen and (max-width: $md1 + px) {
+         margin: 0 0 20px 0
+      }
+   }
+}
+
+//===========================================================================================================================================================================
+
+.recent-posts {
+   background-color: #EDF7FA;
+   padding: 25px 0 13px 0;
+   @media screen and (max-width: $md3 + px) {
+      padding: 25px 0px 23px 0px;
+   }
+   // .recent-posts__container
+
+   &__container {
+   }
+
+   // .recent-posts__header
+
+   &__header {
+      display: flex;
+      margin: 0 0 20px 0;
+   }
+
+   // .recent-posts__title
+
+   &__title {
+      flex: 1 1 auto;
+      padding: 0 20px 0 0;
+   }
+
+   // .recent-posts__view-all
+   &__view-all {
+      flex: 0 0 auto;
+      font-size: 16px;
+      line-height: 23px;
+      color: #00A8CC;
+      @media screen and (max-width: $md3 + px) {
+         display: none;
+      }
+   }
+
+   // .recent-posts__items
+   &__items {
+      
+      margin: 0 -10px;
+      @media screen and (min-width: $md3 + px) {
+         display: flex;
+         flex-wrap: wrap;
+      }
+   }
+
+   // .recent-posts__column
+   &__column {
+      flex: 0 1 50%;
+      padding: 0px 10px;
+      margin: 0 0 17px 0;
+   }
+
+   // .recent-posts__item
+   &__item {
+   }
+}
+
+.recent-post {
+   background: #FFFFFF;
+   box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+   border-radius: 4px;
+   padding: 20px;
+   height: 100%;  
+   *:last-child {
+      margin-bottom: 0px;
+   }
+   @media screen and (max-width: $md3 + px) {
+      padding: 15px;
+   }
+   // .recent-post__title
+   &__title {
+      display: inline-block;
+      color: inherit;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: calc(38 / 26) * 100%;
+      transition: color 0.3s ease 0s;
+      margin: 0 0 17px 0;
+      @media screen and (min-width: $md2 + px) {
+         &:hover {
+            color: #ff6464
+         }
+      }
+      @media screen and (max-width: $md3 + px) {
+         font-size: 22px;  
+         margin: 0 0 10px 0;
+      }
+   }
+   
+
+   // .recent-post__info
+   &__info {
+      font-size: 18px;
+      line-height: calc(26 / 18) * 100%;
+      margin: 0 0 15px 0;
+      @media screen and (max-width: $md3 + px) {
+         font-size: 16px;
+      }
+      span {
+         margin: 0 10px;
+      }
+   }
+
+   // .recent-post__text
+   &__text {
+      margin: 0 0 15px 0;
+   }
+}
+
+//===========================================================================================================================================================================
+
+.featured-works {
+   padding: 30px 0 80px 0;
+   @media screen and (max-width: $md3 + px) {
+      padding: 30px 0 30px 0;
+   }
+   
+   // .featured-works__container
+   &__container {
+   }
+
+   // .featured-works__title
+   &__title {
+      margin: 0 0 20px 0;
+   }
+}
+
+
+
